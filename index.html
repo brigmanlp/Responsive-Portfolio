@@ -1,76 +1,65 @@
 <!-- Assignment 1: Index Page -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Brigman Portfolio Index</title>
+	<meta charset="UTF-8">
+	<title>Brigman Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="page-wrap">
-	<!-- Site Header -->
-	<header>
-		<!-- h1: The most important headline, put your name -->
-		<h1>Louremy Brigman</h1>
 
-		<!-- Navigation bar across the top -->
-		<nav>
-		<ul class="topnav">
-
-			<li><a class="navlink" href="index.html">About</a></li>
-			<li><a class="navlink" href="portfolio.html">Portfolio</a></li>
-			<li><a class="navlink" href="contact.html">Contact</a></li>
-		</ul>
-		</nav>
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Louremy Brigman</a>
+			
+			<!-- Navigation Bar -->
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
 	</header>
 
-	<div>
-		
+	<div id="main-container" class="container">
 		<!-- Section 1: Bio -->
-		<section id="section1">
-			<h2>About Me</h2>
-			<br>
+		<section class="main-section">
+			<h1>About Me</h1>
 
-			<hr id="hr1">
-			
-			<div class="profileimg" style="background-image: url(assets/images/profile.png);">
-			</div>
-			
+			<img src="assets/images/profile.png" class="auth-image" alt="Your Name">
+
 			<p>Hello. My name is Louremy and I am a Full-stack Web Developer based in beautiful Charlotte, North Carolina. I specialize in clean, responsive, and distinct websites and applications. I view each project as my own and do my best to ensure that each client is not only fully satisfied but, thrilled with the final results of the project. 
 			</p> 
 
 			<p>
 			As a professional, I am seeking an organization that values its employees and gives individuals the freedom to grow in their careers. I am a confident leader and know that given the opportunity I can add value to your team. I enjoy great food, watching Hornets Basketball, and Snowboarding. Like what you see? Look over my <a href="portfolio.html">portfolio</a>.</p>
-		</section>
 
+		</section>
+		
 		<!-- Section 2: Social Media -->
-		<section id="section2">
-			<h3>Connect with Me</h3>
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
 
-			<hr id="hr2">
-			<br>
+        <!-- GitHub Logo -->
+        <a href="https://github.com/brigmanlp" target="blank"><img src="assets/images/github.png" class="social" alt="GitHub" /></a>
 
-			<!-- GitHub Logo -->
-			<div><a href="https://github.com/brigmanlp" target="blank"><img class="socialimg" src="assets/images/github.png" style="margin-left: 12px"></a>
+        <!-- LinkedIn Logo -->
+        <a href="#" target="blank"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn" /></a>
+
+        <!-- StackOverflow Logo -->
+        <a href="#" target="blank"><img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow" /></a>
 			</div>
-
-			<!-- LinkedIn Logo -->
-			<div><a href="#" target="blank"><img class="socialimg" src="assets/images/linkedin.png"></a>
-			</div>
-
-			<!-- StackOverflow Logo -->
-			<div><a href="#" target="blank"><img class="socialimg" src="assets/images/stackoverflow.png"></a>
-			</div>
-
 		</section>
-
 	</div>
-</div>
-	<!-- Site Footer -->
-	<footer class="site-footer">
-		<p style="font-size: 0.825em; color: #dddddd; margin: 0px;">&copy; Copyright 2016 Louremy Brigman</p>
-	</footer>
 
+	<!-- Site Footer -->
+	<footer>
+		<div class="container">
+			&copy; Copyright 2016 Louremy Brigman
+		</div>
+	</footer>
 </body>
 </html>

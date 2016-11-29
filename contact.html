@@ -1,95 +1,75 @@
 <!-- Assignment 1: Contact Page -->
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<title>Brigman Portfolio Index</title>
-	<link rel="stylesheet" type="text/css" href="assests/css/reset.css">
+	<meta charset="UTF-8">
+	<title>Brigman Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="page-wrap">
-	<!-- Site Header -->
-	<header>
-		<!-- h1: The most important headline, put your name -->
-		<h1>Louremy Brigman</h1>
 
-		<!-- Navigation bar across the top -->
-		<nav>
-		<ul class="topnav">
-
-			<li><a class="navlink" href="index.html">About</a></li>
-			<li><a class="navlink" href="portfolio.html">Portfolio</a></li>
-			<li><a class="navlink" href="contact.html">Contact</a></li>
-		</ul>
-		</nav>
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">Louremy Brigman</a>
+			
+			<!-- Navigation Bar -->
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
 	</header>
 
-	<div>
-		
+	<div id="main-container" class="container">
 		<!-- Section 1: Bio -->
-		<section id="section1">
-			<h2>Contact</h2>
-			<br>
+		<section class="main-section">
+			<h1>Contact Me</h1>
 
-			<hr id="hr1">
-			
-		<!-- Contact Form Code - source https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/My_first_HTML_form -->
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit">
+			</form>
 
-		<form id="contactform" action="#" method="post">
-				  
-			<div class="row">
-				<label for="name">Name</label><br />
-				<input id="name" class="input" name="name" type="text" value="John Smith" size="30"  /><br />
-			</div>
-			
-			<div class="row">
-				<label for="email">Email</label><br />
-				<input id="email" class="input" name="email" type="text" value="example@gmail.com" size="30" /><br />
-			</div>
-			
-			<div class="row">
-				<label for="message">Message</label><br />
-				<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-			</div>					
-				 
-			<div class="button">
-				<button type="button" class="button">Submit</button>
-			</div>
-
-		</form>
-			
-			
 		</section>
-
+		
 		<!-- Section 2: Social Media -->
-		<section id="section2">
-			<h3>Connect with Me</h3>
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
 
-			<hr id="hr2">
-			<br>
+        <!-- GitHub Logo -->
+        <a href="https://github.com/brigmanlp" target="blank"><img src="assets/images/github.png" class="social" alt="GitHub" /></a>
 
-			<!-- GitHub Logo -->
-			<div><a href="https://github.com/brigmanlp" target="blank"><img class="socialimg" src="assets/images/github.png" style="margin-left: 12px"></a>
+        <!-- LinkedIn Logo -->
+        <a href="#" target="blank"><img src="assets/images/linkedin.png" class="social" alt="LinkedIn" /></a>
+
+        <!-- StackOverflow Logo -->
+        <a href="#" target="blank"><img src="assets/images/stackoverflow.png" class="social" alt="Stack Overflow" /></a>
 			</div>
-
-			<!-- LinkedIn Logo -->
-			<div><a href="#" target="blank"><img class="socialimg" src="assets/images/linkedin.png"></a>
-			</div>
-
-			<!-- StackOverflow Logo -->
-			<div><a href="#" target="blank"><img class="socialimg" src="assets/images/stackoverflow.png"></a>
-			</div>
-
 		</section>
-
 	</div>
 
-</div>
 	<!-- Site Footer -->
-	<footer class="site-footer">
-		<p style="font-size: 0.825em; color: #dddddd; margin: 0px;">&copy; Copyright 2016 Louremy Brigman</p>
+	<footer>
+		<div class="container">
+			&copy; Copyright 2016 Louremy Brigman
+		</div>
 	</footer>
-
 </body>
 </html>
